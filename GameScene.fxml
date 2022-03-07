@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="gameScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="814.0" style="-fx-background-color: #1e90ff;" stylesheets="@../../../../java/com/example/connectfour/application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.connectfour.Controller">
+   <children>
+      <ImageView fitHeight="521.0" fitWidth="608.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@textures/misc/inGameBackgroundBoard.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneOne" fitHeight="50.0" fitWidth="50.0" layoutX="-9.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneTwo" fitHeight="50.0" fitWidth="50.0" layoutX="-9.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneThree" fitHeight="50.0" fitWidth="50.0" layoutX="-9.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneFive" fitHeight="50.0" fitWidth="50.0" layoutX="-9.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneFour" fitHeight="50.0" fitWidth="50.0" layoutX="-9.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneSix" fitHeight="50.0" fitWidth="50.0" layoutX="-9.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoTwo" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoOne" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoThree" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoFive" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoFour" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoSix" fitHeight="50.0" fitWidth="50.0" layoutX="75.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeTwo" fitHeight="50.0" fitWidth="50.0" layoutX="159.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeOne" fitHeight="50.0" fitWidth="50.0" layoutX="159.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeThree" fitHeight="50.0" fitWidth="50.0" layoutX="159.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeFive" fitHeight="50.0" fitWidth="50.0" layoutX="159.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeFour" fitHeight="50.0" fitWidth="50.0" layoutX="159.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeSix" fitHeight="50.0" fitWidth="50.0" layoutX="159.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourTwo" fitHeight="50.0" fitWidth="50.0" layoutX="243.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourOne" fitHeight="50.0" fitWidth="50.0" layoutX="243.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourThree" fitHeight="50.0" fitWidth="50.0" layoutX="243.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourFive" fitHeight="50.0" fitWidth="50.0" layoutX="243.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourFour" fitHeight="50.0" fitWidth="50.0" layoutX="243.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourSix" fitHeight="50.0" fitWidth="50.0" layoutX="243.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveTwo" fitHeight="50.0" fitWidth="50.0" layoutX="327.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveOne" fitHeight="50.0" fitWidth="50.0" layoutX="327.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveThree" fitHeight="50.0" fitWidth="50.0" layoutX="327.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveFive" fitHeight="50.0" fitWidth="50.0" layoutX="327.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveFour" fitHeight="50.0" fitWidth="50.0" layoutX="327.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveSix" fitHeight="50.0" fitWidth="50.0" layoutX="327.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixOne" fitHeight="50.0" fitWidth="50.0" layoutX="411.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixTwo" fitHeight="50.0" fitWidth="50.0" layoutX="411.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixThree" fitHeight="50.0" fitWidth="50.0" layoutX="411.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixFour" fitHeight="50.0" fitWidth="50.0" layoutX="411.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixFive" fitHeight="50.0" fitWidth="50.0" layoutX="411.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixSix" fitHeight="50.0" fitWidth="50.0" layoutX="411.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenOne" fitHeight="50.0" fitWidth="50.0" layoutX="495.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenTwo" fitHeight="50.0" fitWidth="50.0" layoutX="495.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenThree" fitHeight="50.0" fitWidth="50.0" layoutX="495.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenFour" fitHeight="50.0" fitWidth="50.0" layoutX="495.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenFive" fitHeight="50.0" fitWidth="50.0" layoutX="495.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenSix" fitHeight="50.0" fitWidth="50.0" layoutX="495.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image></ImageView>
+      <Label fx:id="textlabel" layoutX="672.0" layoutY="2.0" text="Menu">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="playerTurnLabel" alignment="CENTER" layoutX="663.0" layoutY="46.0" prefHeight="50.0" prefWidth="150.0" text="Player One's Turn">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="406.0" layoutX="613.0" layoutY="109.0" stroke="#166cb7" strokeType="INSIDE" strokeWidth="5.0" width="194.0" />
+      <Label alignment="CENTER" layoutX="608.0" layoutY="114.0" prefHeight="25.0" prefWidth="200.0" text="Score">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="627.0" layoutY="146.0" text="Player One Wins:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="627.0" layoutY="172.0" text="Player Two Wins:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="717.0" layoutY="196.0" text="Ties:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="218.0" text="Game Time:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="p1Wins" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="746.0" layoutY="146.0" prefHeight="20.0" prefWidth="52.0" text="0" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="p2Wins" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="746.0" layoutY="172.0" prefHeight="20.0" prefWidth="52.0" text="0" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ties" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="746.0" layoutY="196.0" prefHeight="20.0" prefWidth="52.0" text="0" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameTime" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="746.0" layoutY="218.0" prefHeight="20.0" prefWidth="52.0" text="0" textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="playerTurnIndicator" fitHeight="50.0" fitWidth="50.0" layoutX="613.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@textures/pieces/ConnectRed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="blankView" fitHeight="50.0" fitWidth="50.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@textures/pieces/ConnectBlank.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="redSideView" fitHeight="50.0" fitWidth="50.0" layoutX="46.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@textures/pieces/ConnectRed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yelSideView" fitHeight="50.0" fitWidth="50.0" layoutX="95.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@textures/pieces/ConnectYellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="521.0" fitWidth="608.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@textures/misc/InGameBoard.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="oneOne1" fitHeight="52.0" fitWidth="52.0" layoutX="-10.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneTwo1" fitHeight="52.0" fitWidth="52.0" layoutX="-10.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneThree1" fitHeight="52.0" fitWidth="52.0" layoutX="-10.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneFive1" fitHeight="52.0" fitWidth="52.0" layoutX="-10.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneFour1" fitHeight="52.0" fitWidth="52.0" layoutX="-10.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="oneSix1" fitHeight="52.0" fitWidth="52.0" layoutX="-10.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoTwo1" fitHeight="52.0" fitWidth="52.0" layoutX="74.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoOne1" fitHeight="52.0" fitWidth="52.0" layoutX="74.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoThree1" fitHeight="52.0" fitWidth="52.0" layoutX="74.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoFive1" fitHeight="52.0" fitWidth="52.0" layoutX="74.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoFour1" fitHeight="52.0" fitWidth="52.0" layoutX="74.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="twoSix1" fitHeight="52.0" fitWidth="52.0" layoutX="74.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeTwo1" fitHeight="52.0" fitWidth="52.0" layoutX="158.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeOne1" fitHeight="52.0" fitWidth="52.0" layoutX="158.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeThree1" fitHeight="52.0" fitWidth="52.0" layoutX="158.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeFive1" fitHeight="52.0" fitWidth="52.0" layoutX="158.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeFour1" fitHeight="52.0" fitWidth="52.0" layoutX="158.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="threeSix1" fitHeight="52.0" fitWidth="52.0" layoutX="158.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourTwo1" fitHeight="52.0" fitWidth="52.0" layoutX="242.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourOne1" fitHeight="52.0" fitWidth="52.0" layoutX="242.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourThree1" fitHeight="52.0" fitWidth="52.0" layoutX="242.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourFive1" fitHeight="52.0" fitWidth="52.0" layoutX="242.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourFour1" fitHeight="52.0" fitWidth="52.0" layoutX="242.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fourSix1" fitHeight="52.0" fitWidth="52.0" layoutX="242.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveTwo1" fitHeight="52.0" fitWidth="52.0" layoutX="326.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveOne1" fitHeight="52.0" fitWidth="52.0" layoutX="326.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveThree1" fitHeight="52.0" fitWidth="52.0" layoutX="326.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveFive1" fitHeight="52.0" fitWidth="52.0" layoutX="326.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveFour1" fitHeight="52.0" fitWidth="52.0" layoutX="326.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="fiveSix1" fitHeight="52.0" fitWidth="52.0" layoutX="326.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixTwo1" fitHeight="52.0" fitWidth="52.0" layoutX="410.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixOne1" fitHeight="52.0" fitWidth="52.0" layoutX="410.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixThree1" fitHeight="52.0" fitWidth="52.0" layoutX="410.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixFive1" fitHeight="52.0" fitWidth="52.0" layoutX="410.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixFour1" fitHeight="52.0" fitWidth="52.0" layoutX="410.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sixSix1" fitHeight="52.0" fitWidth="52.0" layoutX="410.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenTwo1" fitHeight="52.0" fitWidth="52.0" layoutX="494.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenOne1" fitHeight="52.0" fitWidth="52.0" layoutX="494.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenThree1" fitHeight="52.0" fitWidth="52.0" layoutX="494.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenFive1" fitHeight="52.0" fitWidth="52.0" layoutX="494.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenFour1" fitHeight="52.0" fitWidth="52.0" layoutX="494.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <ImageView fx:id="sevenSix1" fitHeight="52.0" fitWidth="52.0" layoutX="494.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true" x="35.0" y="-2.0">
+         <image>
+            <Image url="@textures/borders/BlueBorder.png" />
+         </image></ImageView>
+      <Button fx:id="colOneButton" layoutX="28.0" layoutY="24.0" mnemonicParsing="false" onAction="#button1" opacity="0.0" prefHeight="469.0" prefWidth="45.0" text="Button" />
+      <Button fx:id="colTwoButton" layoutX="112.0" layoutY="22.0" mnemonicParsing="false" onAction="#button2" opacity="0.0" prefHeight="470.0" prefWidth="45.0" text="Button" translateY="2.0" />
+      <Button fx:id="colThreeButton" layoutX="196.0" layoutY="22.0" mnemonicParsing="false" onAction="#button3" opacity="0.0" prefHeight="469.0" prefWidth="45.0" text="Button" translateY="2.0" />
+      <Button fx:id="colFourButton" layoutX="280.0" layoutY="22.0" mnemonicParsing="false" onAction="#button4" opacity="0.0" prefHeight="468.0" prefWidth="45.0" text="Button" translateY="2.0" />
+      <Button fx:id="colFiveButton" layoutX="364.0" layoutY="22.0" mnemonicParsing="false" onAction="#button5" opacity="0.0" prefHeight="468.0" prefWidth="45.0" text="Button" translateY="2.0" />
+      <Button fx:id="colSixButton" layoutX="448.0" layoutY="22.0" mnemonicParsing="false" onAction="#button6" opacity="0.0" prefHeight="468.0" prefWidth="45.0" text="Button" translateY="2.0" />
+      <Button fx:id="colSevenButton" layoutX="532.0" layoutY="24.0" mnemonicParsing="false" onAction="#button7" opacity="0.0" prefHeight="468.0" prefWidth="45.0" text="Button" textFill="WHITE" />
+      <ImageView fx:id="MainMenuButtonImage" fitHeight="42.0" fitWidth="176.0" layoutX="622.0" layoutY="373.0" pickOnBounds="true">
+         <image>
+            <Image url="@textures/misc/button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ExitGameButtonImage" fitHeight="42.0" fitWidth="176.0" layoutX="622.0" layoutY="466.0" pickOnBounds="true">
+         <image>
+            <Image url="@textures/misc/button.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="SaveGameButtonImage" fitHeight="42.0" fitWidth="176.0" layoutX="622.0" layoutY="420.0" pickOnBounds="true">
+         <image>
+            <Image url="@textures/misc/button.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="622.0" layoutY="372.0" prefHeight="41.0" prefWidth="175.0" text="Back to Menu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="621.0" layoutY="421.0" prefHeight="41.0" prefWidth="175.0" text="Save Game">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="622.0" layoutY="465.0" prefHeight="41.0" prefWidth="175.0" text="Exit Game">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToMenu" layoutX="622.0" layoutY="374.0" maxWidth="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#switchToStartMenu" onMousePressed="#mainMenuButtonSwap" onMouseReleased="#mainMenuButtonSwap" opacity="0.0" prefHeight="40.0" prefWidth="176.0" text="Menu">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="gameExit" layoutX="622.0" layoutY="466.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#gameExit" onMousePressed="#exitGameButtonSwap" onMouseReleased="#exitGameButtonSwap" opacity="0.0" prefHeight="40.0" prefWidth="176.0" text="Exit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveGame" layoutX="622.0" layoutY="420.0" minHeight="-Infinity" mnemonicParsing="false" onMousePressed="#saveGameButtonSwap" onMouseReleased="#saveGameButtonSwap" opacity="0.0" prefHeight="40.0" prefWidth="176.0" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
